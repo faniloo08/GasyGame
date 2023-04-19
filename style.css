@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../image/fondjeu.png);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header{
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    min-height: 35px;
+    border-bottom: #F9CC3D 1px solid;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+header li{
+    float: left;
+    display: block;
+    padding: 7px 18px 0 18px;
+    text-align: center;
+}
+header nav{
+    float: right;
+}
+header #branding{
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    padding: 0px 20px 0 20px;
+}
+header #branding h1{
+    font-size: 12px;
+}
+header #branding img{
+   /*margin-top: 10px;*/
+    width: 20px;
+    height: 20px;
+}
+header .highlight, header .current a{
+    color: #F9CC3D;
+    font-weight: bold;
+    padding: 0px 20px 10px 20px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #D760C8;
+    font-weight: bold;
+}
+.active {
+    background-color: #8C3FA7;
+}
+.join{
+    background-color: #F0D256; 
+    border-radius: 10px;
+    animation: change 5s linear infinite;
+    color: white;
+    border: none;
+    width: 75px;
+    height: 25px;
+}
+
+
+@keyframes change{
+    from{background-color: #F0D256;}
+    to{background-color:red;}
+}
+.research{
+    visibility: hidden;
+    width: 60px;
+}
+.sb{
+    background-image: url(../image/search.jpg);
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.langue{
+    background-image: url(../image/world.png);
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-left: 20px;
+}
+footer{
+    padding:20px ;
+    margin-top: 20px;
+    /*position: fixed;*/
+    overflow: auto;
+    /*background-color: #F0D256;*/
+    text-align: center;
+    min-height: 100px;
+}
+footer ul{
+    list-style-type: none;
+    margin-top: 210px;
+    margin-left: 380px;
+    padding: 0;
+    overflow: hidden;
+}
+footer li {
+    float: left;
+}
+footer li img{
+    border: none;
+}
+
+.foot{
+    width: 100%;
+    height: 70px;
+    background-color: #F0D256;
+} 
+
+.ftcontent td{
+    
+    text-align: center;
+}
+td form{
+    float: right;
+    margin-right: 40px;
+    border: none;
+}
+.nwl{
+    float: right;
+    margin-right: 100px;
+}
+.bt1{
+    height: 25px;
+    width: 70px;
+    border: 0;
+    background-color: #F9CC3D;
+}
+.cpr{
+    font-size: 12px;
+    background-color: #F0D256;
+    text-align: center;
+}
+.play{
+    margin: 10px 60px -250px 375px;
+    background: url(../image/VXY.png);
+    width: 311px;
+    height: 245px;
+}
+.play button{
+    margin: 128px 70px -210px 70px;
+    background: url(../image/playbtn.png);
+    width: 175px;
+    height: 75px;
+    border: none;
+    border-radius: 20px;
+}
+.txt{
+    list-style-type: none;
+    margin-top: 18px;
+    margin-left: 20px;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 245px;
+    overflow: auto;
+    font-size: 12px;
+}
+.txt li{
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.txt li h1{
+    color: #D760C8;
+}
+.ads{
+    background-color: #F0D256; 
+    border-radius: 10px;
+    animation: change1 2s linear infinite;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+@keyframes change1{
+    from{background-color: black;}
+    to{background-color:red;}
+    from{font-weight: none;}
+    to{font-weight: bold;}
+}
+
+.adv{
+    list-style-type: none;
+    margin-top: 18px;
+    margin-left: 730px;
+    float: right;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 265px;
+    overflow: auto;
+    font-size: 10px;
+    overflow: hidden;
+    
+}
+.adv div{
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.adv div:hover{
+    background-color: lightgray;
+}
+.content{
+    max-width:2000px;
+    margin-top:0px;
+}
+.mySlides {
+    display: none;
+    position: relative;
+    /*animation: slide 50s;*/
+}
+
+/*@keyframes slide{
+   0%{background-image: url(../image/Soa1.png);}
+   25%{background-image: url(../image/Soa2.png);}
+   50%{background-image: url(../image/Soa3a.png);}
+   75%{background-image: url(../image/Soa3b.png);}
+   100%{background-image: url(../image/Soa4.png);}
+}*/
+.images {
+    width: 100%;
+}
+.display-bottommiddle{
+    margin-top:-100px;
+    color: red;
+    font-size: 12px;
+    text-align: end;
+}
+
+.sens{
+   margin-left: 800px;
+}
+#G{
+    background-image: url(../image/Gauche.png);
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+#D{
+    background-image: url(../image/Droite.png);
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+#G:hover{
+    background-image: url(../image/Gaucheb.png);
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+#D:hover{
+    background-image: url(../image/Droiteb.png);
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.regle{
+    width: 50px;
+    position: fixed;
+    height: 100%;
+}
+.joueur{
+    width: 25%;
+    position: fixed;
+    overflow: auto;
+    padding-left: 170px;
+    padding-top: 10px;
+}
+.joueur #us{
+    padding-top: 100px;
+}
+.joueur #us p{
+    Color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.joueur #user p{
+    Color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.joueur img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.plateau{
+    margin-left:7%;
+    padding:1px 16px;
+    height:1000px;
+} 
+#test{
+    display:none;
+}
+#win{
+    width: 650px;
+    height: 250px;
+    background-image: url(../image/gagner.png);
+    margin-left: 18%;
+    margin-top: -900px;
+    display: none;
+}

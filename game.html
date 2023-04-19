@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATRO | GASYGAME Plateform</title>
+    <link rel = "shortcut icon" href="..\image\icone.png" type="image/x-icon">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../Css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class= "container">
+            <div id = "branding">
+                <table>
+                <tr>
+                    <td>
+                    <img src="..\image\icone.png" alt="logo">
+                    </td>
+                    <td>
+                    <h1><span class="highlight">KATRO</span>Malagasy Game</h1>
+                    </td>
+                </tr>
+                </table>
+            </div>
+                <nav>
+                    <ul>
+                    <li><a class="active" href="../html/home.html">Home</a></li>
+                    <li><a href="#news">Tournaments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li>
+                        <form action="#" method="POST" name ="search">
+                        <input class="research"type="search" name ="sb" placeholder="Search...">
+                        <input class="sb" type="submit">
+                        <select name="langue" class="langue">
+                            <option value="val1">EN</option>
+                            <option value="val2">FR</option>
+                            <option value="val2">MG</option>
+                        </select>
+                        
+                        </form>
+                    </li>
+                    <li><button class="join">Join now</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+        <div id ="jeu">
+            <div class = "regle">
+                <ul class="txt">
+                    <li>
+                    <div>
+                        <p>1-select a hole</p><br>
+                        <p>2-choose a sens</p><br>
+                        <p>(the left and right button)</p><br>
+                        <p>3-click on "go"</p>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="joueur">
+                <table id="user">
+                    <tr>
+                        <td>
+                            <p id="picker">Pick your avatar:</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../image/user.png" id="avatar" onclick="changeavat()">
+                            <div id="test">
+                                <img src="../image/F1.png" class="avatar">
+                                <img src="../image/G1.png" class="avatar">
+                                <img src="../image/F2.png" class="avatar">
+                                <img src="../image/G2.png" class="avatar">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="username" style="Color: white;font-weight: bold;text-align: center">
+                            <input style="width: 80px;" type="text" id="uname" placeholder="Your name..">
+                            <button  onclick="validateForm()">OK</button>
+                        </td>
+                    </tr>
+                </table>
+                <table id="us">
+                    <tr>
+                        <td>
+                            <img src="../image/user.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Jao</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="plateau">
+                <table id='tab'>
+                    
+                </table>
+                <div class="sens">
+                    <button id="G"></button>
+                    <button id="D"></button>
+                </div>  
+                <table id="ordi">
+                    
+                </table>
+            </div>
+        </div>
+        <div id ="win">
+
+        </div>
+        <script>
+            createplat();
+            choixsens();
+        </script>
+    </body>
+</html>
